@@ -18,4 +18,20 @@ public class Product {
     public int getQuantity() {
         return quantity;
     }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setPrix(double prix) {
+        this.prix = prix;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setQuantity(int quantity) {
+        this.quantity = quantity;
+    }
 }

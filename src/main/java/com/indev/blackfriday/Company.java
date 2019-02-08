@@ -1,17 +1,18 @@
 package com.indev.blackfriday;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 
 public class Company {
 
-    private ArrayList<Product> products = new ArrayList<Product>();
+    private HashMap<String,Product> products = new HashMap<String, Product>();
 
     public float sells(String capsule) {
         return 0;
     }
 
     public void stock(int i, String capsule, int i1) {
-        products.add(new Product(i,capsule,i1));
+        products.put(capsule,new Product(i,capsule,i1));
     }
 
     public Company to(int i) {
@@ -24,8 +25,8 @@ public class Company {
 
     public int totalAssets() {
         double total = 0;
-        for (int i=0;i<products.size();i++){
-            total+=products.get(i).getPrix()*products.get(i).getQuantity();
+        for (Product p: products.values()) {
+            total+=p.getPrix()*p.getQuantity();
         }
         return (int) total;
     }
