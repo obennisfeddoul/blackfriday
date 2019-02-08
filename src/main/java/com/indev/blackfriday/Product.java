@@ -19,7 +19,7 @@ public class Product {
         return quantity;
     }
 
-    public String getName() {
+    /*public String getName() {
         return name;
     }
 
@@ -29,7 +29,7 @@ public class Product {
 
     public void setName(String name) {
         this.name = name;
-    }
+    }*/
 
     public void setQuantity(int quantity) {
         this.quantity = quantity;

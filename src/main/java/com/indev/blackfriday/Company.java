@@ -31,13 +31,13 @@ public class Company {
         products.put(capsule,new Product(price,capsule,quantity));
     }
 
-    public Company to(int i) {
+    /*public Company to(int i) {
         return this;
     }
 
     public float computeBenefit() {
         return 0;
-    }
+    }*/
 
     public int totalAssets() {
         double total = 0;
