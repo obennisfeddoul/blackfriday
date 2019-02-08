@@ -66,8 +66,13 @@ public class Company {
 
     public String salesHistory() {
         String history ="";
+        int size=productsSalled.size();
         for (Product p:productsSalled.values()) {
             history += p.getQuantity()+":"+p.getName()+"s";
+            if (size>1){
+                history+=",";
+            }
+            size--;
         }
         return history;
     }
