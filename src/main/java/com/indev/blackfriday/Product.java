@@ -19,10 +19,10 @@ public class Product {
         return quantity;
     }
 
-    /*public String getName() {
+    public String getName() {
         return name;
     }
-
+    /*
     public void setPrix(double prix) {
         this.prix = prix;
     }
